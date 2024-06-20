@@ -1,0 +1,49 @@
+[gd_scene load_steps=10 format=3 uid="uid://m6afph5larl0"]
+
+[ext_resource type="Texture2D" uid="uid://cm6bfoy4rfdko" path="res://addons/Tiny Swords/Factions/Knights/Troops/Dead/Dead.png" id="1_lscr2"]
+[ext_resource type="Texture2D" uid="uid://u7r5srkpj7la" path="res://addons/Tiny Swords/Factions/Knights/Troops/Archer/Arrow/Arrow.png" id="2_gqp46"]
+[ext_resource type="Texture2D" uid="uid://bht8oqk06nf43" path="res://addons/Tiny Swords/Factions/Goblins/Troops/Torch/Blue/Torch_Blue.png" id="3_mhvvi"]
+[ext_resource type="Texture2D" uid="uid://dd7op6wqu6hpt" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Red/Warrior_Red.png" id="4_06mqm"]
+[ext_resource type="Texture2D" uid="uid://lsbkkacska1c" path="res://addons/Tiny Swords/Resources/Resources/G_Idle.png" id="5_fdwek"]
+[ext_resource type="Texture2D" uid="uid://bv8kg4wqd30ap" path="res://addons/Tiny Swords/Resources/Resources/G_Spawn.png" id="6_j1pu6"]
+[ext_resource type="Texture2D" uid="uid://d33aogss0d50h" path="res://addons/Tiny Swords/Resources/Resources/M_Spawn.png" id="7_kl3ev"]
+[ext_resource type="Texture2D" uid="uid://bn1qdcy7dj32k" path="res://addons/Tiny Swords/Resources/Resources/W_Idle.png" id="8_6yhp6"]
+[ext_resource type="Texture2D" uid="uid://btglhafu1cf0n" path="res://addons/Tiny Swords/Resources/Resources/W_Spawn.png" id="9_bah8d"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Dead" type="Sprite2D" parent="."]
+position = Vector2(525, 993)
+texture = ExtResource("1_lscr2")
+
+[node name="Arrow" type="Sprite2D" parent="."]
+position = Vector2(374, 1258)
+texture = ExtResource("2_gqp46")
+
+[node name="TorchBlue" type="Sprite2D" parent="."]
+position = Vector2(673, -421)
+texture = ExtResource("3_mhvvi")
+
+[node name="WarriorRed" type="Sprite2D" parent="."]
+position = Vector2(2139, -829)
+texture = ExtResource("4_06mqm")
+
+[node name="GIdle" type="Sprite2D" parent="."]
+position = Vector2(1472, 296)
+texture = ExtResource("5_fdwek")
+
+[node name="GSpawn" type="Sprite2D" parent="."]
+position = Vector2(1333, 189)
+texture = ExtResource("6_j1pu6")
+
+[node name="MSpawn" type="Sprite2D" parent="."]
+position = Vector2(1245, 387)
+texture = ExtResource("7_kl3ev")
+
+[node name="WIdle" type="Sprite2D" parent="."]
+position = Vector2(1227, 514)
+texture = ExtResource("8_6yhp6")
+
+[node name="WSpawn" type="Sprite2D" parent="."]
+position = Vector2(1154, 569)
+texture = ExtResource("9_bah8d")

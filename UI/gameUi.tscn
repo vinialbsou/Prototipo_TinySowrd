@@ -1,0 +1,151 @@
+[gd_scene load_steps=14 format=3 uid="uid://dvgpa8olo8nbq"]
+
+[ext_resource type="Script" path="res://UI/gameUi.gd" id="1_kih2g"]
+[ext_resource type="Texture2D" uid="uid://cpto82kklnmlr" path="res://addons/Tiny Swords/UI/Banners/Banner_Horizontal.png" id="1_srkec"]
+[ext_resource type="Texture2D" uid="uid://buffmi6jjl6e" path="res://addons/Tiny Swords/Resources/Resources/M_Idle_(NoShadow).png" id="3_2rchy"]
+[ext_resource type="Texture2D" uid="uid://bget256axulis" path="res://addons/Tiny Swords/Resources/Resources/G_Idle_(NoShadow).png" id="4_dhjbw"]
+[ext_resource type="Texture2D" uid="uid://btvt8h14fjygj" path="res://addons/Tiny Swords/Deco/18.png" id="5_ry0hp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fv4ly"]
+font_size = 32
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o50fi"]
+texture = ExtResource("1_srkec")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 34.0
+texture_margin_bottom = 43.0
+region_rect = Rect2(31.5132, 47.9342, 129.829, 122.645)
+
+[sub_resource type="LabelSettings" id="LabelSettings_y1bgr"]
+font_size = 32
+font_color = Color(0.000572779, 0.0113443, 0.00735655, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_is3ws"]
+atlas = ExtResource("3_2rchy")
+region = Rect2(40, 48, 56, 56)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qwxgi"]
+font_size = 32
+font_color = Color(0.00258548, 0.00258484, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kon2"]
+atlas = ExtResource("4_dhjbw")
+region = Rect2(40, 48, 56, 56)
+
+[sub_resource type="LabelSettings" id="LabelSettings_nxyxc"]
+font_size = 32
+font_color = Color(0.00540229, 0.00540229, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58bgt"]
+atlas = ExtResource("5_ry0hp")
+region = Rect2(48, 48, 96, 120)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_kih2g")
+
+[node name="Timer" type="Label" parent="."]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -22.5
+offset_right = 22.5
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Timer"
+label_settings = SubResource("LabelSettings_fv4ly")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 900.0
+offset_top = 10.0
+offset_right = 1149.0
+offset_bottom = 105.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_o50fi")
+
+[node name="Meat" type="Label" parent="Panel2"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 137.0
+offset_top = 14.0
+offset_right = 214.0
+offset_bottom = 53.0
+text = "3"
+label_settings = SubResource("LabelSettings_y1bgr")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MeatTexture" type="TextureRect" parent="Panel2"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = -6.0
+offset_right = 110.0
+offset_bottom = 69.0
+texture = SubResource("AtlasTexture_is3ws")
+
+[node name="Panel3" type="Panel" parent="."]
+offset_left = 899.0
+offset_top = 111.0
+offset_right = 1148.0
+offset_bottom = 206.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_o50fi")
+
+[node name="Golds" type="Label" parent="Panel3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -126.0
+offset_top = 12.0
+offset_right = -29.0
+offset_bottom = 57.0
+grow_horizontal = 0
+text = "10 k
+"
+label_settings = SubResource("LabelSettings_qwxgi")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GoldTexture" type="TextureRect" parent="Panel3"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 3.0
+offset_right = 151.0
+offset_bottom = 131.0
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_7kon2")
+
+[node name="Panel4" type="Panel" parent="."]
+offset_left = 898.0
+offset_top = 213.0
+offset_right = 1147.0
+offset_bottom = 308.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_o50fi")
+
+[node name="Kills" type="Label" parent="Panel4"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -110.0
+offset_top = 10.0
+offset_right = -38.0
+offset_bottom = 55.0
+grow_horizontal = 0
+text = "10"
+label_settings = SubResource("LabelSettings_nxyxc")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="KillsTexture" type="TextureRect" parent="Panel4"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 4.0
+offset_right = 151.0
+offset_bottom = 132.0
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_58bgt")
